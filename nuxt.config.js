@@ -20,6 +20,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+  // 全局样式
+  // css: ['~/assets/main.css', 'assets/font/iconfont.css'],
+  css: ['~/assets/main.css'],
   build: {
     /*
     ** Run ESLint on save
