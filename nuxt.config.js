@@ -23,6 +23,7 @@ module.exports = {
   // 全局样式
   // css: ['~/assets/main.css', 'assets/font/iconfont.css'],
   css: ['~/assets/main.css'],
+  plugins: ['~/plugins/element-ui'],
   build: {
     /*
     ** Run ESLint on save
