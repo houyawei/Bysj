@@ -3,6 +3,7 @@
     <Nav></Nav>
     <nuxt v-bind:style="{ minHeight: minHeight + 'px' }"/>
     <Foot></Foot>
+    <div>3333</div>
   </div>
 </template>
 
