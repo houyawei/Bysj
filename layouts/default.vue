@@ -3,7 +3,8 @@
     <Nav></Nav>
     <nuxt v-bind:style="{ minHeight: minHeight + 'px' }"/>
     <Foot></Foot>
-    dexededed
+    dexedededhjhfjufk
+    jdkafji1234567890-
   </div>
 </template>
 
