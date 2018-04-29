@@ -29,10 +29,10 @@
     data () {
       return {
         relations: [
-          {text: '会员专区', path: '/membOnly', icon: 'lc-shouye1'},
-          {text: '会员专区', path: '/membOnly', icon: 'lc-shouye1'},
-          {text: '会员专区', path: '/membOnly', icon: 'lc-shouye1'},
-          {text: '会员专区', path: '/membOnly', icon: 'lc-shouye1'},
+          {text: '首页', path: '/membOnly', icon: 'lc-shouye1'},
+          {text: '菜谱分类', path: '/membOnly', icon: 'lc-shouye1'},
+          {text: '菜单', path: '/membOnly', icon: 'lc-shouye1'},
+          {text: '作品动态', path: '/membOnly', icon: 'lc-shouye1'},
         ],
       }
     }
@@ -99,5 +99,9 @@
     height: 40px;
     margin-left: 10px;
     background: url("../static/touxiang.png") no-repeat;
+  }
+  .login span{
+    display: inline-block;
+    font-size: 20px;
   }
 </style>
