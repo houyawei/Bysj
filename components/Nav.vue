@@ -28,6 +28,7 @@
   export default {
     data () {
       return {
+        input5: '',
         relations: [
           {text: '首页', path: '/membOnly', icon: 'lc-shouye1'},
           {text: '菜谱分类', path: '/membOnly', icon: 'lc-shouye1'},

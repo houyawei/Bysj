@@ -30,5 +30,6 @@
   .nuxt{
     width: 1000px;
     margin: 0 auto;
+    overflow: hidden;
   }
 </style>
