@@ -10,7 +10,10 @@
       </div>
       <div class="menu fl">
         <ul>
-          <li v-for="(item, index) in relations" :key="index" class="fl">
+          <li v-for="(item, index) in relations"
+              :key="index" class="fl"
+              v-on:mouseenter="dataDetails(index)"
+          >
             <nuxt-link :to="item.path">{{ item.text }}</nuxt-link>
           </li>
         </ul>
@@ -19,6 +22,44 @@
         <div class="touxiang fl"></div>
         <span class="fl">|</span>
         <div class="zhuce fl"></div>
+      </div>
+      <!--菜谱分类-->
+      <div class="caipu" v-if="caipu"
+           v-on:mouseleave="hiddenDetail(1)">
+        <div class="cjzt fl">
+          <h3>常见主题</h3>
+          <ul>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+          </ul>
+        </div>
+        <div class="cjsc fl">
+          <h3>常见食材</h3>
+          <ul>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+          </ul>
+        </div>
+        <div class="slsc fl">
+          <h3>时令食材</h3>
+          <ul>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+            <li>家常菜</li>
+          </ul>
+        </div>
+        <div class="qbfl">全部分类</div>
       </div>
     </div>
   </div>
@@ -29,12 +70,25 @@
     data () {
       return {
         input5: '',
+        caipu: false,
         relations: [
           {text: '首页', path: '/membOnly', icon: 'lc-shouye1'},
-          {text: '菜谱分类', path: '/membOnly', icon: 'lc-shouye1'},
+          {text: '菜谱分类', path: '/recClass', icon: 'lc-shouye1'},
           {text: '菜单', path: '/membOnly', icon: 'lc-shouye1'},
           {text: '作品动态', path: '/membOnly', icon: 'lc-shouye1'},
         ],
+      }
+    },
+    methods: {
+      dataDetails (id) {
+        if (id === 1) {
+          this.caipu = true;
+        }
+      },
+      hiddenDetail (id) {
+        if (id === 1) {
+          this.caipu = false;
+        }
       }
     }
   }
@@ -54,6 +108,7 @@
   .cen{
     width: 1000px;
     margin: 0 auto;
+    position: relative;
   }
   .top .logo{
     display: inline-block;
@@ -104,5 +159,47 @@
   .login span{
     display: inline-block;
     font-size: 20px;
+  }
+  .caipu{
+    width: 440px;
+    position: absolute;
+    top: 65px;
+    right: 100px;
+    background-color: #f5f6f5;
+    box-shadow: 0 0 1px #e8eae8;
+    padding: 16px 16px 0;
+    box-sizing: border-box;
+  }
+  .caipu .fl{
+    width: 28%;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  .caipu h3{
+    color: #909090;
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .caipu li{
+    width: 65px;
+    text-align: center;
+    color: #dd3915;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .caipu li:hover{
+    background-color: #dd3915;
+    color: #ffffff;
+  }
+  .caipu .qbfl{
+    width: 400px;
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #dd3915;
+    border-top: 2px solid #fff;
   }
 </style>
