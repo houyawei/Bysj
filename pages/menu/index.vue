@@ -55,11 +55,11 @@
         </div>
       </div>
       <div class="zhucai fl">
-        <h1>下饭菜</h1>
-        <p><span>最受欢迎</span><i>|</i><span>最近流行</span><i>|</i><span>评分</span></p>
+        <h1>菜单</h1>
+        <p><span>最近流行</span><i>|</i><span>最近创建</span></p>
         <ul>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -68,7 +68,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -77,7 +77,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -86,7 +86,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -95,7 +95,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -104,7 +104,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -113,7 +113,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -122,7 +122,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -131,7 +131,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -140,7 +140,7 @@
             </div>
           </li>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/11.jpg" alt="" class="fl">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -149,53 +149,19 @@
             </div>
           </li>
         </ul>
+        <el-pagination
+          background
+          layout="prev, pager, next"
+          :total="1000">
+        </el-pagination>
       </div>
       <div class="zuixin fl">
-        <h2>最新发布菜谱</h2>
-        <ul>
-          <li>
-            <img src="../../static/xxcp/09.jpg" alt="" class="fl">
-            <div class="fl info">
-              <h3>清炖牛肉<span>步骤图</span></h3>
-              <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
-              <h4>综合评分&nbsp;<span>7.6</span>（七天内 50 人做过</h4>
-              <h6>妹子厨艺</h6>
-            </div>
-          </li>
-          <li>
-            <img src="../../static/xxcp/09.jpg" alt="" class="fl">
-            <div class="fl info">
-              <h3>清炖牛肉<span>步骤图</span></h3>
-              <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
-              <h4>综合评分&nbsp;<span>7.6</span>（七天内 50 人做过</h4>
-              <h6>妹子厨艺</h6>
-            </div>
-          </li>
-          <li>
-            <img src="../../static/xxcp/09.jpg" alt="" class="fl">
-            <div class="fl info">
-              <h3>清炖牛肉<span>步骤图</span></h3>
-              <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
-              <h4>综合评分&nbsp;<span>7.6</span>（七天内 50 人做过</h4>
-              <h6>妹子厨艺</h6>
-            </div>
-          </li>
-          <li>
-            <img src="../../static/xxcp/09.jpg" alt="" class="fl">
-            <div class="fl info">
-              <h3>清炖牛肉<span>步骤图</span></h3>
-              <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
-              <h4>综合评分&nbsp;<span>7.6</span>（七天内 50 人做过</h4>
-              <h6>妹子厨艺</h6>
-            </div>
-          </li>
-        </ul>
         <div class="xfcdqbcd">
-          <h2>下饭菜的全部菜单 <span>全部</span></h2>
+          <h2>流行菜谱 <span>全部</span></h2>
           <el-row>
             <el-col :span="8">
               <el-card  :body-style="{ padding: '0px' }">
-                <img src="../../static/xxcp/10.jpg" class="image">
+                <img src="../../static/xxcp/12.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -205,7 +171,7 @@
                 </div>
               </el-card>
               <el-card   :body-style="{ padding: '0px' }">
-                <img src="../../static/xxcp/10.jpg" class="image">
+                <img src="../../static/xxcp/12.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -214,7 +180,7 @@
                 </div>
               </el-card>
               <el-card  :body-style="{ padding: '0px' }">
-                <img src="../../static/xxcp/10.jpg" class="image">
+                <img src="../../static/xxcp/12.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -223,7 +189,7 @@
                 </div>
               </el-card>
               <el-card :body-style="{ padding: '0px' }">
-                <img src="../../static/xxcp/10.jpg" class="image">
+                <img src="../../static/xxcp/12.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -383,6 +349,13 @@
     font-size: 14px;
     margin-left: 15px;
     color: #dd3915;
+  }
+  .zhucai /deep/ .el-pagination.is-background .el-pager li{
+    background-color: #fff;
+  }
+  .zhucai /deep/ .el-pagination.is-background .el-pager li:not(.disabled).active{
+    background-color: #dd3915;
+    color: #fff;
   }
   .xfcdqbcd /deep/ .el-col-8{
     width: 100%;
