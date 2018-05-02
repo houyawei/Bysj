@@ -20,7 +20,7 @@
         </ul>
       </div>
       <div class="login fl">
-        <div class="touxiang fl"></div>
+        <div class="touxiang fl" @click="pathInfo"></div>
         <span class="fl">|</span>
         <div class="zhuce fl"></div>
       </div>
@@ -90,6 +90,9 @@
         if (id === 1) {
           this.caipu = false;
         }
+      },
+      pathInfo () {
+        this.$router.push({path: '/worksMang'});
       }
     }
   }

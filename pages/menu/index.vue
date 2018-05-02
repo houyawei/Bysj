@@ -1,10 +1,5 @@
 <template>
   <div class="homeCook">
-    <el-breadcrumb separator-class="el-icon-arrow-right">
-      <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>全部分类</el-breadcrumb-item>
-      <el-breadcrumb-item>下饭菜</el-breadcrumb-item>
-    </el-breadcrumb>
     <div class="xiangqing">
       <!--标签-->
       <div class="biaoqian fl">

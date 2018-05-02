@@ -2,10 +2,10 @@
   <!--作品动态-->
   <div class="wk">
     <div class="tit">
-      <h3 class="fl">我关注的更新</h3>
-      <h3 class="fl">全站的更新</h3>
+      <h3 class="fl" :class="{h3Act: h3act}" @click="clickPath(0)">我关注的更新</h3>
+      <h3 class="fl" :class="{h3Act: !h3act}" @click="clickPath(1)">全站的更新</h3>
     </div>
-    <ul class="zp-list">
+    <ul class="zp-list fl">
       <li class="lii">
         <div class="list-tit">
           <img src="../../static/xxcp/13.jpg" alt="">
@@ -115,6 +115,14 @@
         </div>
       </li>
     </ul>
+    <div class="fl liuyan">
+      <h4>彩虹糖72 关注了你</h4>
+      <div class="line"></div>
+      <h4>作品: 瞎搞8搞，美味无处不在</h4>
+      <h4>有 1 条留言</h4>
+      <div class="tixing">> 查看全部提醒</div>
+      <div class="tixing">> 下厨房的厨友</div>
+    </div>
   </div>
 </template>
 
@@ -122,12 +130,23 @@
   export default {
     data () {
       return {
-        act: false
+        act: false,
+        h3act: true
       }
     },
     methods: {
       actClick () {
         this.act = true
+      },
+      clickPath (id) {
+        if (id === 1) {
+          this.h3act = false;
+          this.$router.push({path: '/worksNews/totalStaUpdate'});
+        }
+        if (id === 0) {
+          this.h3act = true;
+          this.$router.push({path: '/worksNews'});
+        }
       }
     }
   }
@@ -152,12 +171,14 @@
     width: 150px;
     height: 50px;
     line-height: 50px;
+    cursor: pointer;
   }
   .tit h3:nth-child(2){
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
   }
-  .tit h3:hover{
+  .tit h3:hover,
+  .tit .h3Act{
     background-color: #dd3915;
     color: #fff;
   }
@@ -200,6 +221,7 @@
     color: #7f828b;
     font-weight: 400;
     font-size: 12px;
+    margin-right: 10px;
   }
   .zp-list .neirong{
     margin-top: 20px;
@@ -286,5 +308,26 @@
   .pinglun li p span{
     margin-right: 15px;
     color: #dd3915;
+  }
+  .liuyan{
+    margin-left: 40px;
+  }
+  .liuyan h4{
+    padding: 5px 0;
+  }
+  .liuyan .line{
+    width: 100%;
+    height: 2px;
+    background-color: #7f828b;
+  }
+  .liuyan .tixing{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f5f6f5;
+    margin-top: 15px;
+    color: #dd3915;
+    padding: 5px;
+    box-sizing: border-box;
   }
 </style>
