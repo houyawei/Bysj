@@ -4,63 +4,10 @@
       <nuxt-link to="/">
         <div class="logo fl"></div>
       </nuxt-link>
-      <div class="serach fl">
-        <el-input placeholder="搜索菜谱、食谱" v-model="input5" class="input-with-select">
-          <el-button slot="append" icon="el-icon-search"></el-button>
-        </el-input>
-      </div>
-      <div class="menu fl">
-        <ul>
-          <li v-for="(item, index) in relations"
-              :key="index" class="fl"
-              v-on:mouseenter="dataDetails(index)"
-          >
-            <nuxt-link :to="item.path">{{ item.text }}</nuxt-link>
-          </li>
-        </ul>
-      </div>
-      <div class="login fl">
+      <div class="login fr">
         <div class="touxiang fl" @click="pathInfo('/worksMang')"></div>
         <span class="fl">|</span>
         <div class="zhuce fl" @click="pathInfo('/worksMang/registered')"></div>
-      </div>
-      <!--菜谱分类-->
-      <div class="caipu" v-if="caipu"
-           v-on:mouseleave="hiddenDetail(1)">
-        <div class="cjzt fl">
-          <h3>常见主题</h3>
-          <ul>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-          </ul>
-        </div>
-        <div class="cjsc fl">
-          <h3>常见食材</h3>
-          <ul>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-          </ul>
-        </div>
-        <div class="slsc fl">
-          <h3>时令食材</h3>
-          <ul>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-            <li>家常菜</li>
-          </ul>
-        </div>
-        <div class="qbfl">全部分类</div>
       </div>
     </div>
   </div>
@@ -71,13 +18,7 @@
     data () {
       return {
         input5: '',
-        caipu: false,
-        relations: [
-          {text: '首页', path: '/', icon: 'lc-shouye1'},
-          {text: '菜谱分类', path: '/recClass', icon: 'lc-shouye1'},
-          {text: '菜单', path: '/menu', icon: 'lc-shouye1'},
-          {text: '作品动态', path: '/worksNews', icon: 'lc-shouye1'},
-        ],
+        caipu: false
       }
     },
     methods: {

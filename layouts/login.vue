@@ -1,20 +1,17 @@
 <template>
   <div>
-    <Nav></Nav>
+    <Nav2></Nav2>
     <nuxt v-bind:style="{ minHeight: minHeight + 'px' }" class="nuxt"/>
-    <Foot></Foot>
   </div>
 </template>
 
 <script>
-  import Nav from '~/components/Nav.vue'
-  import Foot from '~/components/Foot.vue'
+  import Nav2 from '~/components/Nav2.vue'
   import '../assets/font/iconfont.css'
 
   export default {
     components: {
-      Nav,
-      Foot
+      Nav2,
     },
     data () {
       return {
@@ -26,7 +23,8 @@
     }
   }
 </script>
-<style>
+
+<style scoped>
   .nuxt{
     width: 1000px;
     margin: 0 auto;
