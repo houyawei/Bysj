@@ -45,7 +45,13 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    data () {
+      return{
+        input5: ''
+      }
+    }
+  }
 </script>
 
 <style scoped>

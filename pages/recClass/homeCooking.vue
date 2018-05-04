@@ -59,7 +59,7 @@
         <p><span>最受欢迎</span><i>|</i><span>最近流行</span><i>|</i><span>评分</span></p>
         <ul>
           <li>
-            <img src="../../static/xxcp/08.jpg" alt="" class="fl">
+            <img src="../../static/xxcp/08.jpg" alt="" class="fl" @click="recDeta">
             <div class="fl info">
               <h3>干锅土豆片<span>步骤图</span></h3>
               <p>土豆、豆瓣酱、葱花、盐、酱油、蒜顶顶顶</p>
@@ -247,6 +247,9 @@
     methods: {
       xia () {
         this.$router.push({path: '/recClass/homeCooking'});
+      },
+      recDeta () {
+        this.$router.push({path: '/recClass/recipeDeta'});
       },
       handleOpen(key, keyPath) {
         console.log(key, keyPath);

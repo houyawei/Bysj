@@ -8,11 +8,11 @@
             <li>全部分类</li>
             <li>本周最受欢迎</li>
             <li>新秀菜谱</li>
-            <li>新秀菜谱</li>
-            <li>新秀菜谱</li>
-            <li>新秀菜谱</li>
-            <li>新秀菜谱</li>
-            <li>新秀菜谱</li>
+            <li>往期头条</li>
+            <li>厨房101</li>
+            <li>月度最佳</li>
+            <li>最新创建</li>
+            <li>流行菜单</li>
           </ul>
           <div class="zhehe">
             <el-row class="tac">
