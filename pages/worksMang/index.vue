@@ -24,7 +24,7 @@
       <div class="zpList">
         <ul>
           <li>概况</li>
-          <li>菜谱</li>
+          <li @click="pathCp">菜谱</li>
           <li>作品</li>
           <li>菜单</li>
           <li>留言板</li>
@@ -50,13 +50,18 @@
       return{
         input5: ''
       }
+    },
+    methods: {
+      pathCp () {
+        this.$router.push({path: '/worksMang/pubWorks'});
+      }
     }
   }
 </script>
 
 <style scoped>
   .wk{
-    width: 1000px;
+    width: 1015px;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -131,6 +136,7 @@
     line-height: 40px;
     text-align: center;
     border-right: 1px solid #fff;
+    cursor: pointer;
   }
   .ms{
     float: left;

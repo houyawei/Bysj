@@ -28,7 +28,7 @@
 </script>
 <style>
   .nuxt{
-    width: 1000px;
+    width: 1015px;
     margin: 0 auto;
     overflow: hidden;
   }

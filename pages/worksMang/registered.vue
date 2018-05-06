@@ -99,12 +99,6 @@
 </script>
 
 <style scoped>
-  .wk{
-    width: 1000px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
   .Newzh{
     width: 280px;
     font-size: 34px;

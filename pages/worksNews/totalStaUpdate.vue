@@ -254,12 +254,6 @@
 </script>
 
 <style scoped>
-  .wk{
-    width: 1000px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
   .tit{
     width: 100%;
     background-color: #f5f6f5;

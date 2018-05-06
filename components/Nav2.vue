@@ -51,7 +51,7 @@
     background-color: #fff;
   }
   .cen{
-    width: 1000px;
+    width: 1015px;
     margin: 0 auto;
     position: relative;
   }

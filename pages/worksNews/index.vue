@@ -154,7 +154,7 @@
 
 <style scoped>
   .wk{
-    width: 1000px;
+    width: 1015px;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 50px;

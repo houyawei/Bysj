@@ -74,6 +74,7 @@
         caipu: false,
         relations: [
           {text: '首页', path: '/', icon: 'lc-shouye1'},
+          {text: '会员专区', path: '/membOnly', icon: 'lc-shouye1'},
           {text: '菜谱分类', path: '/recClass', icon: 'lc-shouye1'},
           {text: '菜单', path: '/menu', icon: 'lc-shouye1'},
           {text: '作品动态', path: '/worksNews', icon: 'lc-shouye1'},
@@ -110,7 +111,8 @@
     background-color: #fff;
   }
   .cen{
-    width: 1000px;
+    width: 1015px;
+    height: 70px;
     margin: 0 auto;
     position: relative;
   }
