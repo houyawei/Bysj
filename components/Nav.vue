@@ -26,7 +26,7 @@
       </div>
       <!--菜谱分类-->
       <div class="caipu" v-if="caipu"
-           v-on:mouseleave="hiddenDetail(1)">
+           v-on:mouseleave="hiddenDetail(2)">
         <div class="cjzt fl">
           <h3>常见主题</h3>
           <ul>
@@ -83,12 +83,12 @@
     },
     methods: {
       dataDetails (id) {
-        if (id === 1) {
+        if (id === 2) {
           this.caipu = true;
         }
       },
       hiddenDetail (id) {
-        if (id === 1) {
+        if (id === 2) {
           this.caipu = false;
         }
       },
@@ -105,7 +105,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.08);
     height: 70px;
     background-color: #fff;

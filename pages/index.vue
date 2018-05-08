@@ -2,95 +2,92 @@
   <section class="container">
     <div class="main">
       <div class="list fl">
-        <ul>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-          <li>
-            <i class="iconfont icon-jidan"></i>
-            <span>家常菜</span>
-          </li>
-        </ul>
+        <!--/recClass/homeCooking-->
+        <nuxt-link :to="'/recClass/homeCooking'">
+          <ul>
+            <li>
+              <i class="iconfont icon-jidan"></i>
+              <span>家常菜</span>
+            </li>
+            <li>
+              <i class="iconfont icon-time"></i>
+              <span>快手菜</span>
+            </li>
+            <li>
+              <i class="iconfont icon-tanggeng"></i>
+              <span>下饭菜</span>
+            </li>
+            <li>
+              <i class="iconfont icon-shucai-copy"></i>
+              <span>肉</span>
+            </li>
+            <li>
+              <i class="iconfont icon-jidan1"></i>
+              <span>鱼</span>
+            </li>
+            <li>
+              <i class="iconfont icon-jidan"></i>
+              <span>蔬菜</span>
+            </li>
+            <li>
+              <i class="iconfont icon-taiyang1"></i>
+              <span>鸡蛋</span>
+            </li>
+            <li>
+              <i class="iconfont icon-mian"></i>
+              <span>汤羹</span>
+            </li>
+            <li>
+              <i class="iconfont icon-jidan"></i>
+              <span>烘培</span>
+            </li>
+            <li>
+              <i class="iconfont icon-time"></i>
+              <span>主食</span>
+            </li>
+            <li>
+              <i class="iconfont icon-tanggeng"></i>
+              <span>面</span>
+            </li>
+          </ul>
+        </nuxt-link>
       </div>
       <!--轮播图与注册那块-->
       <div class="on-top fl">
         <!--轮播图-->
         <div class="map fl">
-          <el-carousel indicator-position="outside">
-            <el-carousel-item>
-              <img src="../static/lunbo/01.jpg" alt="">
-              <div class="alt">
-                <span>家常菜~杏鲍菇烧牛肉粒</span>
-                <i>12 人做过这道菜</i>
-              </div>
-            </el-carousel-item>
-            <el-carousel-item>
-              <img src="../static/lunbo/02.jpg" alt="">
-              <div class="alt">
-                <span>家常菜~杏鲍菇烧牛肉粒</span>
-                <i>12 人做过这道菜</i>
-              </div>
-            </el-carousel-item>
-            <el-carousel-item>
-              <img src="../static/lunbo/03.jpg" alt="">
-              <div class="alt">
-                <span>家常菜~杏鲍菇烧牛肉粒</span>
-                <i>12 人做过这道菜</i>
-              </div>
-            </el-carousel-item>
-            <el-carousel-item>
-              <img src="../static/lunbo/04.jpg" alt="">
-              <div class="alt">
-                <span>家常菜~杏鲍菇烧牛肉粒</span>
-                <i>12 人做过这道菜</i>
-              </div>
-            </el-carousel-item>
-          </el-carousel>
+          <nuxt-link :to="'/recClass/recipeDeta'">
+            <el-carousel indicator-position="outside">
+              <el-carousel-item>
+                <img src="../static/lunbo/01.jpg" alt="">
+                <div class="alt">
+                  <span>家常菜~杏鲍菇烧牛肉粒</span>
+                  <i>12 人做过这道菜</i>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <img src="../static/lunbo/02.jpg" alt="">
+                <div class="alt">
+                  <span>家常菜~杏鲍菇烧牛肉粒</span>
+                  <i>12 人做过这道菜</i>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <img src="../static/lunbo/03.jpg" alt="">
+                <div class="alt">
+                  <span>家常菜~杏鲍菇烧牛肉粒</span>
+                  <i>12 人做过这道菜</i>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <img src="../static/lunbo/04.jpg" alt="">
+                <div class="alt">
+                  <span>家常菜~杏鲍菇烧牛肉粒</span>
+                  <i>12 人做过这道菜</i>
+                </div>
+              </el-carousel-item>
+            </el-carousel>
+          </nuxt-link>
         </div>
         <!--登陆注册-->
         <div class="login-xia fl">
@@ -102,7 +99,11 @@
             <span><i>0</i>收藏</span>|
             <span style="color: #dd3915">草稿箱</span>
           </p>
-          <div class="cjcp">创建菜谱</div>
+          <nuxt-link :to="'/worksMang/pubWorks'">
+            <div class="cjcp">
+              创建菜谱
+            </div>
+          </nuxt-link>
           <h4>网上不良信息举报专区</h4>
         </div>
       </div>
@@ -114,20 +115,22 @@
             <h2>新秀菜谱</h2>
             <span>全部</span>
           </div>
-          <el-carousel height="150px" trigger="click">
+          <el-carousel height="150px" trigger="click" :autoplay="false">
             <el-carousel-item>
-              <div class="list fl">
-                <img src="../static/xxcp/01.jpg" alt="">
-                <span>菠菜木耳汤——快</span>
-              </div>
-              <div class="list marLe fl">
-                <img src="../static/xxcp/02.jpg" alt="">
-                <span>菠菜木耳汤——快</span>
-              </div>
-              <div class="list fl">
-                <img src="../static/xxcp/03.jpg" alt="">
-                <span>菠菜木耳汤——快</span>
-              </div>
+              <nuxt-link :to="'/recClass/recipeDeta'">
+                <div class="list fl">
+                  <img src="../static/xxcp/01.jpg" alt="">
+                  <span>菠菜木耳汤——快</span>
+                </div>
+                <div class="list marLe fl">
+                  <img src="../static/xxcp/02.jpg" alt="">
+                  <span>菠菜木耳汤——快</span>
+                </div>
+                <div class="list fl">
+                  <img src="../static/xxcp/03.jpg" alt="">
+                  <span>菠菜木耳汤——快</span>
+                </div>
+              </nuxt-link>
             </el-carousel-item>
             <el-carousel-item>
               <div class="list fl">
@@ -377,79 +380,79 @@
               <i class="iconfont icon-jidan"></i>
             </li>
             <li class="fl">
-              <span>1</span>
+              <span>2</span>
+              蛋挞
+              <i class="iconfont icon-shangsheng" style="color: #dd3915;"></i>
+            </li>
+            <li class="fl">
+              <span>3</span>
+              蛋糕
+              <i class="iconfont icon-jidan"></i>
+            </li>
+            <li class="fl">
+              <span>4</span>
+              面包
+              <i class="iconfont icon-jidan"></i>
+            </li>
+            <li class="fl">
+              <span>5</span>
+              红烧肉
+              <i class="iconfont icon-web-icon-" style="color: #0000ff;"></i>
+            </li>
+            <li class="fl">
+              <span>6</span>
+              可乐鸡翅
+              <i class="iconfont icon-shangsheng" style="color: #dd3915;"></i>
+            </li>
+            <li class="fl">
+              <span>7</span>
               可乐鸡翅
               <i class="iconfont icon-jidan"></i>
             </li>
             <li class="fl">
-              <span>1</span>
+              <span>8</span>
+              可乐鸡翅
+              <i class="iconfont icon-web-icon-" style="color: #0000ff;"></i>
+            </li>
+            <li class="fl">
+              <span>9</span>
+              龙虾
+              <i class="iconfont icon-shangsheng" style="color: #dd3915;"></i>
+            </li>
+            <li class="fl">
+              <span>10</span>
+              冰激凌
+              <i class="iconfont icon-jidan"></i>
+            </li>
+            <li class="fl">
+              <span>11</span>
+              糖醋排骨
+              <i class="iconfont icon-ping" style="color: #999999"></i>
+            </li>
+            <li class="fl">
+              <span>12</span>
+              披萨
+              <i class="iconfont icon-jidan"></i>
+            </li>
+            <li class="fl">
+              <span>13</span>
+              可乐鸡翅
+              <i class="iconfont icon-ping" style="color: #999999"></i>
+            </li>
+            <li class="fl">
+              <span>14</span>
               可乐鸡翅
               <i class="iconfont icon-jidan"></i>
             </li>
             <li class="fl">
-              <span>1</span>
+              <span>15</span>
               可乐鸡翅
               <i class="iconfont icon-jidan"></i>
             </li>
             <li class="fl">
-              <span>1</span>
+              <span>16</span>
               可乐鸡翅
               <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-              <i class="iconfont icon-jidan"></i>
-            </li>
-            <li class="fl">
-              <span>1</span>
-              可乐鸡翅
-
             </li>
           </ul>
         </div>
@@ -606,6 +609,7 @@ export default {
   }
   .list li {
     margin-bottom: 15px;
+    cursor: pointer;
   }
   .list li .iconfont{
     font-size: 20px;
@@ -691,6 +695,7 @@ export default {
     color: #fff;
     background-color: #dd3915;
     margin: 20px auto;
+    cursor: pointer;
   }
   .login-xia h4{
     color: #dd3915;
@@ -830,6 +835,7 @@ export default {
   }
   .lxsc-nei li {
     float: left;
+    width: 45%;
   }
   .lxsc-nei li:nth-child(2n){
     margin-left: 30px;

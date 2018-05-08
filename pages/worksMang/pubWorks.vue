@@ -7,10 +7,11 @@
       <el-upload
         class="avatar-uploader"
         action="https://jsonplaceholder.typicode.com/posts/"
+        :headers="hed"
         :show-file-list="false"
         :on-success="handleAvatarSuccess"
         :before-upload="beforeAvatarUpload">
-        <img v-if="imageUrl" :src="imageUrl" class="avatar">
+        <img v-if="imageUrl1" :src="imageUrl1" class="avatar">
         <i v-else class="el-icon-plus avatar-uploader-icon"></i>
         <div class="el-upload__text" v-if="fengFlse">添加封面</div>
       </el-upload>
@@ -64,10 +65,11 @@
               <el-upload
                 class="avatar-uploader"
                 action="https://jsonplaceholder.typicode.com/posts/"
+                :headers="hed"
                 :show-file-list="false"
-                :on-success="handleAvatarSuccess"
-                :before-upload="beforeAvatarUpload">
-                <img v-if="imageUrl" :src="imageUrl" class="avatar">
+                :on-success="handleAvatarSuccess2"
+                :before-upload="beforeAvatarUpload2">
+                <img v-if="imageUrl2" :src="imageUrl2" class="avatar">
                 <i v-else class="el-icon-plus avatar-uploader-icon"></i>
                 <div class="el-upload__text" v-if="fengFlse">添加步骤图</div>
               </el-upload>
@@ -98,7 +100,11 @@
   export default {
     data() {
       return {
-        imageUrl: '',
+        imageUrl1: '',
+        imageUrl2: '',
+        hed: {
+            Accept: 'application/json, text/plain, /'
+        },
         input: '',
         textarea: '',
         tableData: [{
@@ -136,10 +142,26 @@
         rows.splice(index, 1);
       },
       handleAvatarSuccess(res, file) {
-        this.imageUrl = URL.createObjectURL(file.raw);
+        this.imageUrl1 = URL.createObjectURL(file.raw);
         this.fengFlse = false;
       },
       beforeAvatarUpload(file) {
+        const isJPG = file.type === 'image/jpeg';
+        const isLt2M = file.size / 1024 / 1024 < 2;
+
+        if (!isJPG) {
+          this.$message.error('上传头像图片只能是 JPG 格式!');
+        }
+        if (!isLt2M) {
+          this.$message.error('上传头像图片大小不能超过 2MB!');
+        }
+        return isJPG && isLt2M;
+      },
+      handleAvatarSuccess2(res, file) {
+        this.imageUrl2 = URL.createObjectURL(file.raw);
+        this.fengFlse = false;
+      },
+      beforeAvatarUpload2(file) {
         const isJPG = file.type === 'image/jpeg';
         const isLt2M = file.size / 1024 / 1024 < 2;
 
@@ -247,7 +269,7 @@
     font-weight: 700;
   }
   .bzTu .avatar-uploader{
-    background-color: #e7e1cd;
+    /*background-color: #e7e1cd;*/
     padding-bottom: 10px;
   }
   .bzTu .avatar-uploader .el-upload {
