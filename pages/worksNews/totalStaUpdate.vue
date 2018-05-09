@@ -254,6 +254,12 @@
 </script>
 
 <style scoped>
+  .wk{
+    width: 1015px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
   .tit{
     width: 100%;
     background-color: #f5f6f5;
@@ -303,7 +309,7 @@
     width: 100%;
   }
   .tu /deep/ .el-card{
-    margin-left: 30px;
+    margin-left: 45px;
     margin-bottom: 30px;
   }
   .userInfo span{

@@ -15,7 +15,7 @@
             </div>
             <div style="padding: 14px;" class="pingfen">
               <span><i>7.7</i>综合评分&nbsp;&nbsp;<i>54</i>人做过这道菜</span>
-              <el-button type="primary" class="fr sc">收藏</el-button>
+              <el-button type="primary" class="fr sc" @click="shouc">收藏</el-button>
             </div>
           </el-card>
         </el-col>
@@ -136,7 +136,16 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    methods: {
+      shouc () {
+        this.$message({
+          message: '恭喜你，收藏成功',
+          type: 'success'
+        });
+      }
+    }
+  }
 </script>
 
 <style scoped>

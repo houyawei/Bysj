@@ -21,8 +21,11 @@
         minHeight: 0
       }
     },
-    mounted () {
+    beforeMount () {
       this.minHeight = document.body.clientHeight - 188
+    },
+    mounted () {
+      // this.minHeight = document.body.clientHeight - 188
     }
   }
 </script>

@@ -195,7 +195,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/05.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -204,7 +204,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/06.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -213,7 +213,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/07.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -222,7 +222,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/08.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -231,7 +231,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/09.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -240,7 +240,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/02.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -249,7 +249,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/01.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -258,7 +258,7 @@
                 </div>
               </el-card>
               <el-card class="fl"  :body-style="{ padding: '0px' }">
-                <img src="../static/xxcp/04.jpg" class="image">
+                <img src="../static/xxcp/03.jpg" class="image">
                 <div style="padding: 14px;">
                   <span>好吃的汉堡</span>
                   <div class="bottom clearfix">
@@ -328,11 +328,11 @@
                 <span>春笋</span>
               </li>
               <li>
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/06.jpg" alt="">
                 <span>春笋</span>
               </li>
               <li>
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/07.jpg" alt="">
                 <span>春笋</span>
               </li>
               <li>
@@ -340,27 +340,27 @@
                 <span>春笋</span>
               </li>
               <li class="marRi">
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/08.jpg" alt="">
                 <span>春笋</span>
               </li>
               <li  class="marle">
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/09.jpg" alt="">
                 <span>春笋</span>
               </li>
               <li>
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/10.jpg" alt="">
                 <span>春笋</span>
               </li>
               <li>
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/11.jpg" alt="">
                 <span>春笋</span>
               </li>
               <li>
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/12.jpg" alt="">
                 <span>春笋</span>
               </li>
               <li class="marRi">
-                <img src="../static/xxcp/05.jpg" alt="">
+                <img src="../static/xxcp/13.jpg" alt="">
                 <span>春笋</span>
               </li>
             </ul>
@@ -775,6 +775,10 @@ export default {
   .zjlx /deep/ .el-card{
     width: 48%;
   }
+  .zjlx /deep/ .el-card img{
+    width: 100%;
+    height: 128px;
+  }
   .zjlx /deep/ .el-card:nth-child(2n){
     margin-left: 2%;
     margin-bottom: 5%;
@@ -790,13 +794,17 @@ export default {
     background-color: #f5f6f5;
     margin: 0 -4px;
     padding: 0;
-    min-width: 468px;
+    min-width: 430px;
     overflow: hidden;
     padding: 15px 15px 7px;
   }
   .slsc .sc-back li{
     float: left;
-    margin: 0 20px;
+    margin: 0 16px;
+  }
+  .slsc .sc-back li img{
+    width: 60px;
+    height: 60px;
   }
   .slsc .sc-back .marle{
     margin-left: 0;
