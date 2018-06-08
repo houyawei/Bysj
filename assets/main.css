@@ -16,3 +16,5 @@ ul, ol { list-style: none; }
 .fr{float: right;}
 html, body{width: 100%;}
 body{background: red}
+.box{width: 100px;}
+.box1{width: 100px;}
